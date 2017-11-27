@@ -13,10 +13,11 @@
 ActiveRecord::Schema.define(version: 20171123172845) do
 
   create_table "tasks", force: :cascade do |t|
-    t.string "title"
-    t.boolean "done"
+    t.string "title", null: false
+    t.boolean "done", default: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["title"], name: "index_tasks_on_title"
   end
 
 end
