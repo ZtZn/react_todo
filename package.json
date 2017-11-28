@@ -1,5 +1,7 @@
 {
   "name": "react_todo",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "jquery": "^3.2.1"
+  }
 }
